@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="flex justify-between rounded-lg bg-slate-200 p-2 m-4">
+      <nav class="flex items-center">
+        <img src="./assets/logo.png" />
+        <h2 class="ml-3 font-bold">Dev Board</h2>
+      </nav>
+      <button onclick="changePage()" class="btn bg-slate-300 rounded-lg m-2">
+        BackToDesk
+      </button>
+    </header>
+    <section class="flex my-10 text-3xl font-bold justify-center items-center">
+      <h1>Blogs</h1>
+    </section>
+    <main>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title font-semibold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          the select element is using many types. such as getElementId("").this
+          is found only single id selector. such as
+          getElementsByClassName('').this is collect many class property. such
+          as quarrySelector("").this is select the single element.such as
+          quarrySelectorAll. this is select the all elements.
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="collapse-content">
+          innerHTML is a JavaScript file create a html element the content file.
+          innerText is a including the html file the text context inside html
+          file. textContent is a only text the file.
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content text-sm">
+          Even delegation is attach the parent element to the children element .
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="collapse-content text-sm">
+          event bubble is javascript mechanism the parent event trigger pass the
+          children . the children event lifting the parent event.
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="collapse-content text-sm">
+          create: the javascript create a element using the createElement("").
+          add: using the add create the appendChild() element. remove: the
+          element remove the file using the removeChild() or remove all using
+          the remove().
+        </div>
+      </div>
+    </main>
+    <script src="js/dev.js"></script>
+  </body>
+</html>
